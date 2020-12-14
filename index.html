@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для отправки данных</title>
+</head>
+
+<body>
+    
+    <header>
+        <h1>Форма для отправки данных</h1>
+    </header>
+    
+    <main>
+        <fieldset>
+            <legend>Личные данные</legend>
+                <input type="text" name="name" placeholder="Имя"><br>
+                <input type="tel" name="phone" placeholder="Номер телефона"><br>
+                <input type="email" name="email" placeholder="Электронный адрес"><br>
+                <input type="password" name="password" placeholder="Пароль"><br>
+        </fieldset>
+
+        <label>Вы человек?</label>
+        <input list="answer_1" name="answer">
+
+        <datalist id="answer_1">
+            <option value="Да">
+        </datalist><br>
+    
+        <label>Вам есть 18?</label>
+        <input list="answer_2" name="answer">
+
+        <datalist id="answer_2">
+            <option value="Да">
+        </datalist><br>
+
+        <label>Вы заполнили предыдущие ячейки?</label>
+        <input list="answer_3" name="answer">
+
+        <datalist id="answer_3">
+            <option value="Да">
+        </datalist><br>
+
+        <textarea name="text" placeholder="Оставьте свои пожелания" cols="100" rows="10"></textarea><br>
+    </main>
+
+    <footer>
+        <button type="submit">Отправить форму</button>
+        <button type="reset">Сбросить форму</button>
+    </footer>
+
+</body>
+
+</html>
